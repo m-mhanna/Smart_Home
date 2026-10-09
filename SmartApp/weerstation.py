@@ -53,6 +53,11 @@ def weerstation():
 
             try:
                 windsnelheid = float(wind)
+
+                if windsnelheid < 0:
+                    print("Ongeldig invoer, de windsnelheid kan niet negatief zijn")
+                    continue
+
                 break
             except ValueError:
                 print("Ongeldige invoer, probeer opnieuw.")
