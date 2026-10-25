@@ -13,7 +13,7 @@ BLUE = '\033[34m'
 while True:
     try:
         keuze = int(input(
-            BLUE+"1: Weerstation\n"
+            BLUE + "1: Weerstation\n"
             "2: Smart App Controller\n"
             "3: Huidige Temperatuur\n"
             "4: Stoppen\n"
@@ -31,7 +31,7 @@ while True:
             print(
                 "Huidige temperatuur in Utrecht:",
                 temperatuur,
-                "°C"
+                "°C\n"
             )
 
         elif keuze == 4:

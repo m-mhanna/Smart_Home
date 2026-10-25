@@ -54,9 +54,10 @@ def weerstation():
             try:
                 windsnelheid = float(wind)
 
-                if windsnelheid < 0:
+                if windsnelheid <= 0:
                     print("Ongeldig invoer, windsnelheid kan niet negatief zijn")
                     continue
+
 
                 break
             except ValueError:
@@ -88,4 +89,4 @@ def weerstation():
         print(f"Het is {temp_celsius:.2f}C ({temp_fahrenheit:.2f}F)")
         print(weerrapport(temp_celsius, windsnelheid, luchtvochtigheid))
         print(f"Gem. temp tot nu toe is {gemiddelde_temp:.2f}")
-        print("=============================================")
+        print("=============================================\n")

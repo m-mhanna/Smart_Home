@@ -81,6 +81,7 @@ def overwrite_settings(outputFile):
                     delen[3] = "False"
 
                 elif waarde == "1":
+
                     delen[3] = "True"
 
                 else:
@@ -149,7 +150,7 @@ def smart_app_controller():
 
         elif keuze == "4":
 
-            print("Bye")
+            print("Bye\n")
             break
 
         else:
